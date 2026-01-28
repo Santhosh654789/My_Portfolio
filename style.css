@@ -165,5 +165,105 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding-top: 10px;
+    }
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 120px 20px 80px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+
+    section {
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 1.8;
+        padding: 0 10px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-box {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .project-card li {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 
 
