@@ -1,19 +1,21 @@
-# Personal Portfolio Website
+🌐 Personal Portfolio Website
 
-This is a simple personal portfolio website created using HTML and CSS to showcase my profile, skills, projects, and contact details.
+This is my personal portfolio website developed using HTML, CSS, and JavaScript to showcase my skills, projects, and professional profile as a Java Full Stack Developer.
 
----
+Features:
+> Responsive modern UI design
+> Smooth scrolling navigation
+> Typing animation effect in hero section
+> Interactive project cards with hover effects
+> Animated skill progress bars
+> Fixed navigation bar with scroll effect
+> Social media integration (LinkedIn & GitHub)
+> Clean and structured layout
 
-## 📌 About the Project
+Technologies Used:
+> HTML5
+> CSS3 (Flexbox, Gradients, Media Queries, Transitions)
+> JavaScript (DOM Manipulation, Typing Animation, Scroll Effects)
 
-This portfolio website is designed to present my information in a clean and structured way.  
-It includes sections such as About Me, Skills, Projects, and Contact details.
-
----
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-
-
+Purpose of This Project:
+The purpose of this portfolio is to present my technical skills, highlight my projects, and demonstrate my frontend development abilities including responsive design, UI styling, and JavaScript-based interactivity.
