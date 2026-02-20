@@ -10,8 +10,35 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at 20% 30%, #0f172a, #020617 60%);
     color: white;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    opacity: 0.05;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #7c3aed, transparent 70%);
+    top: -100px;
+    right: -100px;
+    opacity: 0.4;
+    filter: blur(120px);
+    z-index: -1;
 }
 
 header {
@@ -106,32 +133,161 @@ section h2 {
     margin-bottom: 30px;
 }
 
-.skill {
-    margin-bottom: 20px;
-    text-align: left;
+#roles {
+    padding: 80px 50px;
+    text-align: center;
 }
 
-.progress {
-    background: rgba(255,255,255,0.2);
+.section-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.roles-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.role-card {
+    width: 250px;
+    height: 200px;
     border-radius: 20px;
-    overflow: hidden;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0,255,255,0.5);
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    transition: 0.4s;
 }
 
-.progress div {
-    height: 10px;
-    background: linear-gradient(90deg,#00ffd5,#ff00c8);
+.role-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-.project-card {
+.role-card h3 {
+    font-size: 20px;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0,255,255,0.7);
+    border-color: #00ffff;
+}
+
+.skills-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.logo-box {
+    width: 120px;
+    text-align: center;
     background: rgba(255,255,255,0.1);
     padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    border-radius: 12px;
     transition: 0.3s;
 }
 
+.logo-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.logo-box:hover {
+    transform: translateY(-8px);
+}
+
+.fa-java { 
+    color: #f89820; 
+}
+
+.fa-react { 
+    color: #61DBFB; 
+}
+
+.fa-js { 
+    color: #F7DF1E; 
+}
+
+.fa-html5 { 
+    color: #E34F26; 
+}
+
+.fa-css3-alt { 
+    color: #1572B6; 
+}
+
+.fa-bootstrap { 
+    color: #7952B3; 
+}
+
+.fa-node-js { 
+    color: #68A063; 
+}
+
+.fa-github { 
+    color: #ffffff; 
+}
+
+.fa-leaf { 
+    color: #4DB33D; 
+}
+
+#projects {
+    padding: 50px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0,255,255,0.4);
+    box-shadow: 0 0 15px rgba(0,255,255,0.15);
+    transition: all 0.4s ease;
+}
+
+
 .project-card:hover {
-    transform: scale(1.05);
+
+    transform: translateY(-12px) scale(1.03);
+    border: 1px solid #00ffff;
+    box-shadow:
+        0 0 20px rgba(0,255,255,0.6),
+        0 0 40px rgba(0,255,255,0.4),
+        0 0 60px rgba(0,255,255,0.2);
+
+    background: rgba(255,255,255,0.08);
+}
+
+.project-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.project-card ul {
+    padding-left: 20px;
+}
+
+.project-card li {
+    margin-bottom: 8px;
 }
 
 .social i {
@@ -221,9 +377,21 @@ section h2 {
 
 }
 
+@media (max-width: 1100px) {
+    .roles-container {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media (max-width: 600px) {
+    .roles-container {
+        grid-template-columns: repeat(1, 250px);
+    }
+}
 
 footer {
     text-align: center;
     padding: 15px;
     background: rgba(0,0,0,0.4);
 }
+
